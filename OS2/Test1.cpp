@@ -1,29 +1,29 @@
-#include "Colloc1.cpp" // Предполагаемый заголовочный файл для класса Operation
+#include "Colloc1.cpp" // ГЏГ°ГҐГ¤ГЇГ®Г«Г ГЈГ ГҐГ¬Г»Г© Г§Г ГЈГ®Г«Г®ГўГ®Г·Г­Г»Г© ГґГ Г©Г« Г¤Г«Гї ГЄГ«Г Г±Г±Г  Operation
 #include <gtest/gtest.h>
 
-// Тестирование выполнения операции сложения
+// Г’ГҐГ±ГІГЁГ°Г®ГўГ Г­ГЁГҐ ГўГ»ГЇГ®Г«Г­ГҐГ­ГЁГї Г®ГЇГҐГ°Г Г¶ГЁГЁ Г±Г«Г®Г¦ГҐГ­ГЁГї
 TEST(OperationTest, AdditionTest) {
     Addition addition;
     std::vector<float> numbers = { 2.0f, 3.0f, 5.0f };
-    float expected_result = 10.0f; // Ожидаемый результат: 2 + 3 + 5 = 10
+    float expected_result = 10.0f; // ГЋГ¦ГЁГ¤Г ГҐГ¬Г»Г© Г°ГҐГ§ГіГ«ГјГІГ ГІ: 2 + 3 + 5 = 10
     float result = addition.perform(numbers);
     EXPECT_FLOAT_EQ(expected_result, result);
 }
 
-// Тестирование выполнения операции умножения
+// Г’ГҐГ±ГІГЁГ°Г®ГўГ Г­ГЁГҐ ГўГ»ГЇГ®Г«Г­ГҐГ­ГЁГї Г®ГЇГҐГ°Г Г¶ГЁГЁ ГіГ¬Г­Г®Г¦ГҐГ­ГЁГї
 TEST(OperationTest, MultiplicationTest) {
     Multiplication multiplication;
     std::vector<float> numbers = { 2.0f, 3.0f, 5.0f };
-    float expected_result = 30.0f; // Ожидаемый результат: 2 * 3 * 5 = 30
+    float expected_result = 30.0f; // ГЋГ¦ГЁГ¤Г ГҐГ¬Г»Г© Г°ГҐГ§ГіГ«ГјГІГ ГІ: 2 * 3 * 5 = 30
     float result = multiplication.perform(numbers);
     EXPECT_FLOAT_EQ(expected_result, result);
 }
 
-// Тестирование выполнения операции суммы квадратов
+// Г’ГҐГ±ГІГЁГ°Г®ГўГ Г­ГЁГҐ ГўГ»ГЇГ®Г«Г­ГҐГ­ГЁГї Г®ГЇГҐГ°Г Г¶ГЁГЁ Г±ГіГ¬Г¬Г» ГЄГўГ Г¤Г°Г ГІГ®Гў
 TEST(OperationTest, SumOfSquaresTest) {
     SumOfSquares sumOfSquares;
     std::vector<float> numbers = { 2.0f, 3.0f, 5.0f };
-    float expected_result = 38.0f; // Ожидаемый результат: 2^2 + 3^2 + 5^2 = 4 + 9 + 25 = 38
+    float expected_result = 38.0f; // ГЋГ¦ГЁГ¤Г ГҐГ¬Г»Г© Г°ГҐГ§ГіГ«ГјГІГ ГІ: 2^2 + 3^2 + 5^2 = 4 + 9 + 25 = 38
     float result = sumOfSquares.perform(numbers);
     EXPECT_FLOAT_EQ(expected_result, result);
 }
