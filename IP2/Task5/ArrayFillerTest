@@ -1,0 +1,14 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+
+class ArrayFillerTest {
+
+    @Test
+    void testArrayFill() {
+        Integer[] squares = new Integer[5];
+        ArrayFiller.fill(squares, integer -> integer * integer);
+
+        Integer[] expected = {0, 1, 4, 9, 16};
+        assertArrayEquals(expected, squares);
+    }
+}
