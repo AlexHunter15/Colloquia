@@ -5,6 +5,7 @@
 
 Пример:
 // Пример кода в C++ для создания нового процесса в Windows
+```
 #include <windows.h>
 
 int main() {
@@ -36,3 +37,4 @@ int main() {
 
     return 0;
 }
+```
